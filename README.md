@@ -16,9 +16,7 @@ sudo jetson_clocks --fan
 sudo bash -c "echo 'performance' > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor"
 ```
 Create a directory to be shared with the docker container (e.g. shared_data).
-Download the pretrained models from:
-https://kansas-my.sharepoint.com/:u:/g/personal/a249s197_home_ku_edu/EdnqLdheA8FJhE6SwRi1_TwBAy6Z9wMpw697_EIGcbHT5w?e=Gu69RC
-Download the nuScenes dataset from [nuscenes.org](https://www.nuscenes.org/nuscenes#download). Extract the models and the dataset into the shared directory with the following hierarchy:
+Download the pretrained models from  [here](https://kansas-my.sharepoint.com/:u:/g/personal/a249s197_home_ku_edu/EdnqLdheA8FJhE6SwRi1_TwBAy6Z9wMpw697_EIGcbHT5w?e=Gu69RC) and nuScenes dataset from [nuscenes.org](https://www.nuscenes.org/nuscenes#download). Extract the models and the dataset into the shared directory with the following hierarchy:
 ```
 shared_data/nuscenes/v1.0-trainval/
 |-- maps
