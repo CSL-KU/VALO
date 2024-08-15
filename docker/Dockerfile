@@ -36,7 +36,6 @@ RUN /bin/bash -c 'cd; \
 	echo "export LD_PRELOAD=\${LD_PRELOAD}:/usr/local/lib/python3.8/dist-packages/sklearn/__check_build/../../scikit_learn.libs/libgomp-d22c30c5.so.1.0.0" >> ~/.bashrc; \
 	source ~/.bashrc'
 
-RUN /bin/bash -c 'apt purge opencv*; \
-	pip install numpy==1.23.0; \
-	pip install kornia==0.6.12; \
+RUN /bin/bash -c 'apt purge -y opencv*; \
+	pip install numpy==1.23.0 kornia==0.6.12; \
 	pip install --upgrade matplotlib'

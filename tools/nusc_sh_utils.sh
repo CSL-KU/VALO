@@ -92,7 +92,7 @@ link_infos()
 prune_train_data_from_tables()
 {
 	PTH="../data/nuscenes/v1.0-$DATASET"
-	#python nusc_dataset_utils.py prune_training_data_from_tables
+	python nusc_dataset_utils.py prune_training_data_from_tables
 	mv pruned_tables $PTH/v1.0-trainval-pruned
 	pushd $PTH
 	mv v1.0-trainval v1.0-trainval-orig
