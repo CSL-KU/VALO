@@ -28,7 +28,7 @@ export CKPT_FILE="../models/cbgs_voxel0075_res3d_centerpoint_anytime_v1.pth"
 export TASKSET="taskset 0x3f"
 export OMP_NUM_THREADS=2
 export USE_ALV1=1
-./run_tests.sh singlem $DEADLINE_SEC
+./run_tests.sh singlem 10 $DEADLINE_SEC
 unset OMP_NUM_THREADS USE_ALV1 TASKSET CFG_FILE CKPT_FILE DEADLINE_RANGE_MS DATASET_RANGE
 
 # TESTING
